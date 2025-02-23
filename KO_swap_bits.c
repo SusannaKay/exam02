@@ -3,13 +3,7 @@
 
 unsigned char swap_bits(unsigned char octet)
 {
-    unsigned char result;
-    while (octet)
-    {
-        result = (result << 1 )| (octet & 1);
-        octet >>= 1;
-    }
-    return(result);
+    return(octet >> 4| octet <<4);
 }
 
 void print_bits(unsigned char octet)
