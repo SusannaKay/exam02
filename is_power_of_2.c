@@ -10,13 +10,3 @@ int	    is_power_of_2(unsigned int n)
         return (0);
     
 }
-   #include <stdio.h>
-
-int main()
-{
-    int n;
-    n = 5;
-
-    printf("%d", is_power_of_2(n));
-    return (0);
-}
