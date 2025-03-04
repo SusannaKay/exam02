@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
             if(alpha)
             {
                 i = find_chr(str[j], alpha);
-                i = (i + 13) %ft_strlen(alpha);
+                i = (i + 13) % ft_strlen(alpha);
                 write(1, &alpha[i], 1);
             }
             else
