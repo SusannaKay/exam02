@@ -66,8 +66,10 @@ int main(int argc, char *argv[])
             while(s[z])
             {
                 if (is_alpha_cap(s[z]) == 2 && !last_char(&(s[z])))
+                    
                 
                 write(1, &s[z], 1);
+                z++;
             }
             write(1, "\n", 1);
             i++;

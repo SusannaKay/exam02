@@ -50,7 +50,7 @@ void ft_putnbr(int n)
     write(1, &c, 1);
 }
 
-void print_tab(int a, int b, int res) //9 x 9 = 81
+void print_tab(int a, int b, int res) 
 {
     ft_putnbr(a);
     write(1," x ", 3);
