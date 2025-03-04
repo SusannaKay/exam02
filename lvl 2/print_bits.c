@@ -10,15 +10,14 @@ Example, if you pass 2 to print_bits, it will print "00000010"%
 */
 #include <unistd.h>
 
-void	print_bits(unsigned char octet)
+void print_bits(unsigned char octet)
 {
-    int n;
-    char c;
-    n = 0;
-    while(n <= 8)
+    int index = 8;
+    int bit;
+
+    while (index--)
     {
-        c = (octet >> n & 1) + '0';
-        write(1, &c, 1);
-        n++;
+        bit = (octet >> index & 1) + '0';
+        write(1, &bit, 1);
     }
 }
